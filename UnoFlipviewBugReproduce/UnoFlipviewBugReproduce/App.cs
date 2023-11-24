@@ -55,7 +55,7 @@ public class App : Application
                     // TODO: Register your services
                     //services.AddSingleton<IMyService, MyService>();
                 })
-                .UseNavigation(ReactiveViewModelMappings.ViewModelMappings, RegisterRoutes)
+                .UseNavigation(RegisterRoutes)
             );
         MainWindow = builder.Window;
 
@@ -69,17 +69,17 @@ public class App : Application
     private static void RegisterRoutes(IViewRegistry views, IRouteRegistry routes)
     {
         views.Register(
-            new ViewMap(ViewModel: typeof(ShellModel)),
-            new ViewMap<MainPage, MainModel>(),
-            new DataViewMap<SecondPage, SecondModel, Entity>()
+            new ViewMap(ViewModel: typeof(ShellViewModel)),
+            new ViewMap<MainPage, MainViewModel>(),
+            new DataViewMap<SecondPage, SecondViewModel, Entity>()
         );
 
         routes.Register(
-            new RouteMap("", View: views.FindByViewModel<ShellModel>(),
+            new RouteMap("", View: views.FindByViewModel<ShellViewModel>(),
                 Nested: new RouteMap[]
                 {
-                    new RouteMap("Main", View: views.FindByViewModel<MainModel>()),
-                    new RouteMap("Second", View: views.FindByViewModel<SecondModel>()),
+                    new RouteMap("Main", View: views.FindByViewModel<MainViewModel>()),
+                    new RouteMap("Second", View: views.FindByViewModel<SecondViewModel>()),
                 }
             )
         );

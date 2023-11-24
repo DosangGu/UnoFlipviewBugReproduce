@@ -39,7 +39,7 @@
       "request": "launch",
       "preLaunchTask": "build-skia-gtk",
       // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/UnoFlipviewBugReproduce.Skia.Gtk/bin/Debug/net7.0/UnoFlipviewBugReproduce.Skia.Gtk.dll",
+      "program": "${workspaceFolder}/UnoFlipviewBugReproduce.Skia.Gtk/bin/Debug/net8.0/UnoFlipviewBugReproduce.Skia.Gtk.dll",
       "args": [],
       "env": {
         "DOTNET_MODIFIABLE_ASSEMBLIES": "debug"

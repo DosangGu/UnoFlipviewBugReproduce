@@ -2,7 +2,7 @@
   <PropertyGroup>
     <OutputType Condition="'$(Configuration)'=='Release'">WinExe</OutputType>
     <OutputType Condition="'$(Configuration)'=='Debug'">Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Uno.WinUI.Skia.Gtk" />
+    <PackageReference Include="CommunityToolkit.Mvvm" />
     <PackageReference Include="Uno.Extensions.Configuration" />
     <PackageReference Include="Uno.Extensions.Logging.WinUI" />
     <PackageReference Include="Uno.Material.WinUI" />
@@ -20,7 +21,6 @@
     <PackageReference Include="Uno.Extensions.Hosting.WinUI" />
     <PackageReference Include="Uno.Extensions.Navigation.Toolkit.WinUI" />
     <PackageReference Include="Uno.Extensions.Navigation.WinUI" />
-    <PackageReference Include="Uno.Extensions.Reactive.WinUI" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" />
     <PackageReference Include="SkiaSharp.Views.Uno.WinUI" />
     <PackageReference Include="SkiaSharp.Skottie" />

@@ -1,5 +1,5 @@
 namespace UnoFlipviewBugReproduce.Presentation;
 
-public partial record SecondModel(Entity Entity)
+public partial record SecondViewModel(Entity Entity)
 {
 }
