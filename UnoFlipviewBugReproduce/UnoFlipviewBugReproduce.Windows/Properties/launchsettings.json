@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"UnoFlipviewBugReproduce.Windows (Unpackaged)": {
+			"commandName": "Project"
+		},
+		"UnoFlipviewBugReproduce.Windows (Package)": {
+			"commandName": "MsixPackage"
+		}
+	}
+}
